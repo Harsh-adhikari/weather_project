@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        
+        <!-- Search input for city name -->
+        <div class="search-container">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <!-- Loading spinner (hidden by default) -->
+        <div id="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+        
+        <!-- Weather card to display current weather details -->
+        <div id="weather-card">
+            <img id="weather-icon" alt="Weather Icon">
+            <div id="temp-div"></div>
+            <div id="weather-info"></div>
+        </div>
+        
+        <div id="forecast-container">
+            <div id="hourly-forecast">
+                <!-- Hourly forecast will be inserted here by JavaScript -->
+            </div>
+            <div id="daily-forecast">
+                <!-- Daily forecast will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Button to toggle dark mode -->
+        <button id="dark-mode-toggle">Dark Mode</button>
+
+        <div class="footer">
+            <p>Stay updated with <strong>real-time weather.</strong> </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
